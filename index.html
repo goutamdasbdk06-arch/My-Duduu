@@ -1,0 +1,76 @@
+export default function RomanticApologyAnimation() { return ( <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-pink-100 via-rose-50 to-white flex items-center justify-center px-6"> {/* Floating Hearts */} <div className="absolute inset-0 overflow-hidden"> {[...Array(25)].map((_, i) => ( <div key={i} className="absolute text-pink-300 animate-bounce opacity-70" style={{ left: ${Math.random() * 100}%, top: ${Math.random() * 100}%, fontSize: ${18 + Math.random() * 30}px, animationDuration: ${2 + Math.random() * 4}s, }} > ❤ </div> ))} </div>
+
+{/* Main Card */}
+  <div className="relative z-10 max-w-3xl backdrop-blur-xl bg-white/30 border border-white/40 shadow-2xl rounded-[40px] p-10 text-center animate-fade-in">
+    <div className="flex justify-center mb-6">
+      <div className="w-32 h-32 rounded-full bg-gradient-to-br from-pink-300 to-rose-400 flex items-center justify-center shadow-2xl animate-pulse text-6xl">
+        🫂
+      </div>
+    </div>
+
+    <h1 className="text-5xl font-bold text-rose-600 mb-6 leading-tight">
+      I Never Wanted To Hurt You...
+    </h1>
+
+    <p className="text-gray-700 text-lg leading-9 font-medium">
+      Sometimes its happen but I do not do with any intention.
+      <br />
+      But trust me, my love for you has always been softer than my mistakes.
+      <br />
+      <br />
+      I know your heart got hurt,
+      and I know sorry cannot erase that moment.
+      <br />
+      But every heartbeat inside me still whispers your name gently.
+      <br />
+      <br />
+      You are not just someone I love...
+      <br />
+      You are the peace my soul searches for every day 🌸.
+    </p>
+
+    {/* Animated Quote */}
+    <div className="mt-10 p-6 rounded-3xl bg-pink-50 shadow-inner border border-pink-100">
+      <p className="text-2xl italic text-rose-500 leading-10 animate-pulse">
+        “Your smile☺️ is still my favorite place in this world... 🤍”
+      </p>
+    </div>
+
+    {/* Cute Animated Stars */}
+    <div className="flex justify-center gap-4 mt-8 text-3xl animate-bounce">
+      ✨ 🌙 💖 🌸 ✨
+    </div>
+
+    {/* Bottom Romantic Lines */}
+    <div className="mt-10 text-gray-600 text-lg leading-8">
+      <p>
+        Sometimes I hurt you but I really Love You So much 💞...
+      </p>
+      <p>
+        I just want a love where your heart 💗 always feels safe with me again.
+      </p>
+    </div>
+  </div>
+
+  {/* Background Glow */}
+  <div className="absolute bottom-[-100px] w-[700px] h-[700px] bg-pink-300/30 rounded-full blur-3xl"></div>
+
+  <style>{`
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fade-in 1.8s ease-out;
+    }
+  `}</style>
+</div>
+
+); }
